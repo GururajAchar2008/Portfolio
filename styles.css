@@ -147,7 +147,7 @@ section {
     background: var(--primary-color);
     color: var(--bg-color);
     padding: 12px 30px;
-    border-radius: 5px;
+    border-radius: 50px;
     font-weight: 600;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -317,3 +317,4 @@ footer p {
 .whatsapp-button:hover {
   background-color: #128c7e;
 }
+
