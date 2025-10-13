@@ -323,3 +323,66 @@ footer p {
 .whatsapp-button:hover {
   background-color: #128c7e;
 }
+/* Contact layout + card styles */
+#contact {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1rem 0;
+}
+
+/* left column card */
+.contact-details {
+  background: #fbfbfb;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  line-height: 1.45;
+  max-width: 480px;
+}
+
+/* paragraphs/links inside */
+.contact-details p {
+  margin: .45rem 0;
+  color: #222;
+  font-size: 0.98rem;
+}
+.contact-details a {
+  color: #0b63d6;
+  text-decoration: none;
+}
+.contact-details a:hover { text-decoration: underline; }
+
+/* make form sit beside the details on wider screens */
+@media (min-width: 900px) {
+  #contact {
+    grid-template-columns: 360px 1fr;
+    align-items: start;
+  }
+  .map-container {
+    grid-column: 1 / -1; /* make map full width under both columns */
+  }
+}
+
+/* small improvements for the contact form and map */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: .6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: .6rem;
+  font-size: .97rem;
+}
+.cta-button, .whatsapp-button {
+  display: inline-block;
+  margin-top: .35rem;
+  padding: .55rem .9rem;
+  border-radius: 6px;
+  background: #0b63d6;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.whatsapp-button { background: #25D366; margin-left: .5rem; }
