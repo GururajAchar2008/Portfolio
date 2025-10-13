@@ -39,6 +39,7 @@ section {
     margin-bottom: 3rem;
     position: relative;
     display: inline-block;
+    align-self: center;
 }
 
 .section-title::after {
@@ -236,10 +237,12 @@ section {
 /* --- Contact Section --- */
 .contact-form {
     max-width: 600px;
+    width:50%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin:10 20
 }
 
 .contact-form input,
@@ -325,9 +328,16 @@ footer p {
 }
 /* Contact layout + card styles */
 #contact {
-  display: grid;
+  
   gap: 1.25rem;
   padding: 1rem 0;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+
 }
 
 /* left column card */
@@ -339,6 +349,9 @@ footer p {
   box-shadow: 0 4px 12px rgba(0,0,0,0.03);
   line-height: 1.45;
   max-width: 480px;
+  width:50%;
+  margin-bottom: 20px;
+  align-self: center;
 }
 
 /* paragraphs/links inside */
@@ -386,3 +399,17 @@ footer p {
   cursor: pointer;
 }
 .whatsapp-button { background: #25D366; margin-left: .5rem; }
+.map-container iframe {
+  display: block;
+  width: 100% !important;
+  height: 360px; /* adjust as needed */
+  border: 0;
+}
+.map-container {
+  width: 100%;
+  max-width: 1100px; /* optional max width */
+  margin: 0.75rem auto 0; /* centers the map */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
