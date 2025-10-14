@@ -310,6 +310,13 @@ footer p {
     .contact-details {
         min-width:90%;
     }
+    .contact-form{
+        min-width:90%;
+    }
+    .whatsapp-button{
+        min-width:100%;
+    }
+
 }
 .whatsapp-button {
   background-color: #25d366; 
@@ -372,12 +379,14 @@ footer p {
 /* make form sit beside the details on wider screens */
 @media (min-width: 900px) {
   #contact {
-    grid-template-columns: 360px 1fr;
+    grid-template-columns: 500px 1fr;
     align-items: start;
+    min-width: 100%;
   }
   .map-container {
     grid-column: 1 / -1; /* make map full width under both columns */
   }
+  
 }
 
 /* small improvements for the contact form and map */
@@ -416,4 +425,3 @@ footer p {
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
-
